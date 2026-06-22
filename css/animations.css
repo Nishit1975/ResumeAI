@@ -1,0 +1,372 @@
+/* ═══════════════════════════════════════════════════════════════
+   ResumeAI – animations.css
+   Keyframes, scroll reveal, micro-interactions
+═══════════════════════════════════════════════════════════════ */
+
+/* ──────────────────────────────────────────
+   1. KEYFRAME DEFINITIONS
+────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; transform: translateY(-8px); }
+  to   { opacity: 1; max-height: 500px; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100%  { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.3); opacity: 0.7; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(-8px); }
+}
+
+@keyframes orbFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(20px, -30px) scale(1.05); }
+  66%      { transform: translate(-15px, 20px) scale(0.95); }
+}
+
+@keyframes meshShift {
+  0%   { background-position: 0% 0%, 100% 100%, 50% 50%; }
+  100% { background-position: 100% 50%, 0% 50%, 100% 0%; }
+}
+
+@keyframes arrowPulse {
+  0%, 100% { transform: translateX(0); opacity: 1; }
+  50%      { transform: translateX(4px); opacity: 0.6; }
+}
+
+@keyframes scrollWheel {
+  0%   { opacity: 0; transform: translateY(0); }
+  30%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(12px); }
+}
+
+@keyframes progressGlow {
+  0%, 100% { opacity: 0; }
+  50%      { opacity: 1; }
+}
+
+@keyframes tagPop {
+  0%   { opacity: 0; transform: scale(0.6); }
+  70%  { transform: scale(1.08); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0%   { opacity: 0.5; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateY(0) scale(1); }
+  to   { opacity: 0; transform: translateY(-16px) scale(0.9); }
+}
+
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes navbarReveal {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+/* ──────────────────────────────────────────
+   2. SCROLL REVEAL
+   Elements enter viewport → animate in
+────────────────────────────────────────── */
+
+/* Base hidden state */
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.2, 0.8, 0.3, 1);
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal-up    { transform: translateY(40px); }
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+.reveal-fade  { transform: none; }
+
+/* Active (in view) state */
+.reveal-up.in-view,
+.reveal-left.in-view,
+.reveal-right.in-view,
+.reveal-fade.in-view {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ──────────────────────────────────────────
+   3. NAVBAR ANIMATION
+────────────────────────────────────────── */
+.navbar {
+  animation: navbarReveal 0.6s ease forwards;
+}
+
+/* ──────────────────────────────────────────
+   4. HERO ANIMATIONS
+   Staggered entrance for hero content
+────────────────────────────────────────── */
+.hero .hero-badge     { animation-delay: 0.2s; }
+.hero .hero-title     { animation-delay: 0.35s; }
+.hero .hero-subtitle  { animation-delay: 0.5s; }
+.hero .hero-ctas      { animation-delay: 0.65s; }
+.hero .hero-stats     { animation-delay: 0.8s; }
+.hero .hero-visual    { animation-delay: 0.5s; }
+
+/* ──────────────────────────────────────────
+   5. BUTTON RIPPLE EFFECT
+────────────────────────────────────────── */
+.btn { position: relative; overflow: hidden; }
+
+.btn .ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  pointer-events: none;
+}
+
+/* ──────────────────────────────────────────
+   6. FEATURE CARD HOVER
+────────────────────────────────────────── */
+.feature-card {
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease,
+    border-color 0.25s ease;
+}
+
+/* ──────────────────────────────────────────
+   7. TEMPLATE CARD HOVER
+────────────────────────────────────────── */
+.template-card {
+  transition:
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease,
+    border-color 0.25s ease;
+}
+
+/* ──────────────────────────────────────────
+   8. SKILL TAG ENTRANCE
+────────────────────────────────────────── */
+.skill-tag {
+  animation: tagPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* ──────────────────────────────────────────
+   9. DYNAMIC ROW ENTRANCE
+────────────────────────────────────────── */
+.dynamic-row {
+  animation: fadeInUp 0.3s ease both;
+}
+
+/* ──────────────────────────────────────────
+   10. FORM SECTION ACCORDION
+────────────────────────────────────────── */
+.form-section {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ──────────────────────────────────────────
+   11. PROGRESS BAR PULSE
+────────────────────────────────────────── */
+.progress-fill {
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.progress-fill::after {
+  animation: progressGlow 2s ease infinite;
+}
+
+/* ──────────────────────────────────────────
+   12. FAQ ACCORDION
+────────────────────────────────────────── */
+.faq-answer {
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ──────────────────────────────────────────
+   13. TOAST NOTIFICATIONS
+────────────────────────────────────────── */
+.toast { animation: toastIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+.toast.leaving { animation: toastOut 0.3s ease both; }
+
+/* ──────────────────────────────────────────
+   14. BACK TO TOP
+────────────────────────────────────────── */
+.back-to-top {
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.back-to-top:hover { transform: translateY(-4px) !important; }
+
+/* ──────────────────────────────────────────
+   15. RESUME PREVIEW FADE ON TEMPLATE SWITCH
+────────────────────────────────────────── */
+.resume-preview {
+  transition: opacity 0.2s ease;
+}
+.resume-preview.switching {
+  opacity: 0.3;
+}
+
+/* ──────────────────────────────────────────
+   16. HERO MOCK SHIMMER (decorative)
+────────────────────────────────────────── */
+.mock-field, .mock-resume-field, .mock-resume-name, .mock-resume-role {
+  animation: shimmer 2s ease-in-out infinite;
+}
+.mock-field:nth-child(2) { animation-delay: 0.3s; }
+.mock-field:nth-child(3) { animation-delay: 0.6s; }
+.mock-resume-field:nth-child(2) { animation-delay: 0.2s; }
+.mock-resume-field:nth-child(3) { animation-delay: 0.4s; }
+
+/* ──────────────────────────────────────────
+   17. SECTION NUMBER TAG GLOW
+────────────────────────────────────────── */
+.legend-num {
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.section-legend:hover .legend-num,
+.section-legend[aria-expanded="true"] .legend-num {
+  background: var(--clr-primary);
+  color: white;
+}
+
+/* ──────────────────────────────────────────
+   18. SKILL CHECKBOX TRANSITION
+────────────────────────────────────────── */
+.skill-checkbox {
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
+}
+.skill-checkbox:hover { transform: scale(1.04); }
+.skill-checkbox:active { transform: scale(0.97); }
+
+/* ──────────────────────────────────────────
+   19. NAV LINK UNDERLINE ANIMATION
+────────────────────────────────────────── */
+.nav-link::after {
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ──────────────────────────────────────────
+   20. CONTACT CODE BLOCK — CURSOR BLINK
+────────────────────────────────────────── */
+.contact-code::after {
+  content: '|';
+  color: var(--clr-primary);
+  animation: pulse 1s step-end infinite;
+  margin-left: 2px;
+}
+
+/* ──────────────────────────────────────────
+   21. HERO ORB ANIMATION
+────────────────────────────────────────── */
+.hero-orb-1 { animation-duration: 9s; }
+.hero-orb-2 { animation-duration: 11s; }
+.hero-orb-3 { animation-duration: 7s; }
+
+/* ──────────────────────────────────────────
+   22. LOADING SPLASH ENTRANCE
+────────────────────────────────────────── */
+.splash-logo {
+  animation: fadeInUp 0.6s ease both;
+}
+.splash-bar {
+  animation: fadeIn 0.6s 0.3s ease both;
+}
+
+/* ──────────────────────────────────────────
+   23. MOBILE MENU LINK STAGGER
+────────────────────────────────────────── */
+.mobile-menu.open .mobile-nav-link:nth-child(1) { animation: fadeInUp 0.3s 0.05s ease both; }
+.mobile-menu.open .mobile-nav-link:nth-child(2) { animation: fadeInUp 0.3s 0.10s ease both; }
+.mobile-menu.open .mobile-nav-link:nth-child(3) { animation: fadeInUp 0.3s 0.15s ease both; }
+.mobile-menu.open .mobile-nav-link:nth-child(4) { animation: fadeInUp 0.3s 0.20s ease both; }
+.mobile-menu.open .mobile-nav-link:nth-child(5) { animation: fadeInUp 0.3s 0.25s ease both; }
+.mobile-menu.open .mobile-cta { animation: fadeInUp 0.3s 0.30s ease both; }
+
+/* ──────────────────────────────────────────
+   24. REDUCE MOTION (Accessibility)
+────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-up,
+  .reveal-left,
+  .reveal-right,
+  .reveal-fade {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-orb { animation: none; }
+}

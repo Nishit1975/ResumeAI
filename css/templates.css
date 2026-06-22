@@ -1,0 +1,1336 @@
+/* ═══════════════════════════════════════════════════════════════
+   ResumeAI – templates.css
+   Resume preview styles for all 3 templates
+═══════════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════════
+   TEMPLATE 1 — PROFESSIONAL
+   Single column, classic corporate, ATS-friendly
+═══════════════════════════════════════════════════════════════ */
+.resume-preview.tmpl-1 {
+  font-family: 'Plus Jakarta Sans', 'Georgia', serif;
+  background: #ffffff;
+  color: #1A1D2E;
+  padding: 0;
+  font-size: 10pt;
+  line-height: 1.5;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.tmpl-1 .rv-header {
+  background: linear-gradient(135deg, #6C63FF 0%, #5A52E0 100%);
+  color: white;
+  padding: 28px 32px;
+}
+.tmpl-1 .rv-name {
+  font-size: 26pt;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+  .rv-section,
+  .tmpl-2 .rv-t2-section,
+  .tmpl-2 .rv-t2-sidebar-section {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  
+  .tmpl-1 .rv-section,
+  .tmpl-2 .rv-t2-section,
+  .tmpl-2 .rv-t2-sidebar-section,
+  .tmpl-3 .rv-section {
+    margin-bottom: 12px !important;
+  }
+  
+  .tmpl-1 .rv-section-title,
+  .tmpl-2 .rv-t2-section-title,
+  .tmpl-2 .rv-t2-sidebar-title,
+  .tmpl-3 .rv-section-title {
+    margin-bottom: 7px !important;
+    padding-bottom: 4px !important;
+  }
+  
+  .tmpl-1 .rv-proj-item,
+  .tmpl-1 .rv-cert-item,
+  .tmpl-1 .rv-edu-item,
+  .tmpl-1 .rv-skill-tag,
+  .tmpl-1 .rv-soft-skill-tag,
+  .tmpl-1 .rv-language-tag,
+  .tmpl-2 .rv-proj-item,
+  .tmpl-2 .rv-cert-item,
+  .tmpl-2 .rv-edu-item,
+  .tmpl-2 .rv-skill-tag,
+  .tmpl-2 .rv-soft-skill-tag,
+  .tmpl-2 .rv-language-tag,
+  .tmpl-3 .rv-proj-item,
+  .tmpl-3 .rv-cert-item,
+  .tmpl-3 .rv-edu-item,
+  .tmpl-3 .rv-skill-tag,
+  .tmpl-3 .rv-soft-skill-tag,
+  .tmpl-3 .rv-language-tag {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  /* flex-wrap: wrap;
+  gap: 6px 16px;
+  font-size: 8pt;
+  opacity: 0.9;
+} */
+.tmpl-1 .rv-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.tmpl-1 .rv-contact-item {
+  white-space: nowrap;
+}
+
+.tmpl-1 .rv-body { padding: 24px 32px; }
+
+.tmpl-1 .rv-section { margin-bottom: 18px; }
+
+.tmpl-1 .rv-section-title {
+  font-size: 9pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #6C63FF;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #6C63FF;
+  margin-bottom: 10px;
+}
+
+.tmpl-1 .rv-objective {
+  font-size: 9.5pt;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+.tmpl-1 .rv-edu-item {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EEF2FF;
+}
+
+.tmpl-1 .rv-edu-school {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1A1D2E;
+  margin-bottom: 2px;
+}
+
+.tmpl-1 .rv-edu-degree {
+  font-size: 9pt;
+  color: #4B5563;
+  margin-bottom: 1px;
+}
+
+.tmpl-1 .rv-edu-meta {
+  font-size: 8.5pt;
+  color: #6C63FF;
+  font-weight: 600;
+}
+
+.tmpl-1 .rv-skills-list,
+.tmpl-1 .rv-languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tmpl-1 .rv-skill-tag,
+.tmpl-1 .rv-soft-skill-tag,
+.tmpl-1 .rv-language-tag {
+  background: linear-gradient(135deg, rgba(108,99,255,.12), rgba(0,212,170,.08));
+  border: 1px solid rgba(108,99,255,.3);
+  color: #6C63FF;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 8pt;
+  font-weight: 600;
+}
+
+.tmpl-1 .rv-proj-item {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F3F4F6;
+}
+.tmpl-1 .rv-proj-item:last-child { border-bottom: none; }
+.tmpl-1 .rv-proj-name {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1A1D2E;
+  margin-bottom: 3px;
+}
+.tmpl-1 .rv-proj-tech {
+  font-size: 8pt;
+  color: #6C63FF;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.tmpl-1 .rv-proj-desc {
+  font-size: 9pt;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.tmpl-1 .rv-exp-item { margin-bottom: 12px; }
+.tmpl-1 .rv-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+.tmpl-1 .rv-exp-role {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1A1D2E;
+}
+.tmpl-1 .rv-exp-company {
+  font-size: 9pt;
+  color: #6B7280;
+}
+.tmpl-1 .rv-exp-duration {
+  font-size: 8.5pt;
+  color: #6C63FF;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+.tmpl-1 .rv-exp-desc {
+  font-size: 9pt;
+  color: #4B5563;
+  line-height: 1.6;
+}
+
+.tmpl-1 .rv-languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tmpl-1 .rv-cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6px;
+}
+.tmpl-1 .rv-cert-name {
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: #1A1D2E;
+}
+.tmpl-1 .rv-cert-org {
+  font-size: 9pt;
+  color: #6B7280;
+}
+.tmpl-1 .rv-cert-year {
+  font-size: 8.5pt;
+  color: #6C63FF;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+/* Empty state */
+.tmpl-1 .rv-empty {
+  font-size: 9pt;
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TEMPLATE 2 — PREMIUM ELEGANT (Single-Column ATS-Friendly)
+   Inspired by executive resume design with serif typography
+   Clean white background · Elegant horizontal dividers · Professional spacing
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Root container ── */
+.resume-preview.tmpl-2 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1A1D2E;
+  display: block;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   ELEGANT HEADER — Name (Serif) Left · Contact Info (Right Stacked)
+═════════════════════════════════════════════════════════════════ */
+.tmpl-2 .rv-t2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 28px 20px;
+  border-bottom: 2px solid #1A1D2E;
+  background: #ffffff;
+}
+
+.tmpl-2 .rv-t2-header-left {
+  flex: 1;
+}
+
+/* Name — Serif font for elegance */
+.tmpl-2 .rv-t2-name {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 28pt;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: #1A1D2E;
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+  text-transform: uppercase;
+  tracking: 0.05em;
+}
+
+/* Title — Elegant sans-serif under name */
+.tmpl-2 .rv-t2-title {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #4B5563;
+  margin: 4px 0 0 0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Contact info — stacked on right */
+.tmpl-2 .rv-t2-header-right {
+  text-align: right;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+
+.tmpl-2 .rv-t2-contact-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  font-size: 9pt;
+  color: #4B5563;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.tmpl-2 .rv-t2-contact-item a {
+  color: #1A1D2E;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #1A1D2E;
+}
+
+.tmpl-2 .rv-t2-contact-item a:hover {
+  opacity: 0.7;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   PROFESSIONAL SUMMARY — Full Width Section
+═════════════════════════════════════════════════════════════════ */
+.tmpl-2 .rv-t2-summary-section {
+  padding: 16px 28px;
+  border-bottom: 1px solid #D1D5FF;
+}
+
+.tmpl-2 .rv-t2-objective {
+  font-size: 10pt;
+  line-height: 1.8;
+  color: #374151;
+  margin: 0;
+  padding: 0;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   MAIN BODY — Single Column with Elegant Dividers
+═════════════════════════════════════════════════════════════════ */
+.tmpl-2 .rv-t2-body {
+  display: block;
+  padding: 0;
+}
+
+/* ─── Section Wrapper ─── */
+.tmpl-2 .rv-t2-section {
+  padding: 16px 28px;
+  border-bottom: 1px solid #D1D5FF;
+  page-break-inside: avoid;
+}
+
+.tmpl-2 .rv-t2-section:last-child {
+  border-bottom: none;
+}
+
+/* ─── Section Title — Elegant Serif ─── */
+.tmpl-2 .rv-t2-section-title {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 13pt;
+  font-weight: 400;
+  color: #1A1D2E;
+  margin: 0 0 12px 0;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+}
+
+/* ─── Skills Container (Pill UI) ─── */
+.tmpl-2 .rv-t2-skills-container,
+.tmpl-2 .rv-t2-soft-skills-container,
+.tmpl-2 .rv-t2-languages-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tmpl-2 .rv-skill-tag,
+.tmpl-2 .rv-soft-skill-tag,
+.tmpl-2 .rv-language-tag {
+  background: #ffffff;
+  border: 1.5px solid #4B5563;
+  color: #1A1D2E;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 8.5pt;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-block;
+  page-break-inside: avoid;
+  letter-spacing: 0.5px;
+}
+
+/* ─── Projects List ─── */
+.tmpl-2 .rv-t2-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tmpl-2 .rv-proj-item {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  page-break-inside: avoid;
+}
+
+.tmpl-2 .rv-proj-name {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1A1D2E;
+  margin: 0 0 3px 0;
+}
+
+.tmpl-2 .rv-proj-tech {
+  font-size: 8.5pt;
+  color: #4B5563;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.tmpl-2 .rv-proj-desc {
+  font-size: 9pt;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ─── Education List ─── */
+.tmpl-2 .rv-t2-education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tmpl-2 .rv-edu-item {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  page-break-inside: avoid;
+}
+
+.tmpl-2 .rv-edu-school {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1A1D2E;
+  margin: 0 0 3px 0;
+}
+
+.tmpl-2 .rv-edu-degree {
+  font-size: 9pt;
+  color: #4B5563;
+  margin: 0 0 2px 0;
+}
+
+.tmpl-2 .rv-edu-meta {
+  font-size: 8.5pt;
+  color: #4B5563;
+  font-weight: 600;
+  margin: 2px 0 0 0;
+}
+
+/* ─── Certifications List ─── */
+.tmpl-2 .rv-t2-certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tmpl-2 .rv-cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: transparent;
+  page-break-inside: avoid;
+  gap: 10px;
+}
+
+.tmpl-2 .rv-cert-name {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #1A1D2E;
+  margin: 0;
+}
+
+.tmpl-2 .rv-cert-org {
+  font-size: 8.5pt;
+  color: #4B5563;
+  margin: 1px 0 0 0;
+}
+
+.tmpl-2 .rv-cert-year {
+  font-size: 8.5pt;
+  color: #4B5563;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: right;
+  margin: 0;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 600px) {
+  .resume-preview.tmpl-2 {
+    font-size: 9.5pt;
+  }
+
+  .tmpl-2 .rv-t2-header {
+    flex-direction: column;
+    padding: 20px 20px 16px;
+    border-bottom: 2px solid #1A1D2E;
+  }
+
+  .tmpl-2 .rv-t2-header-left {
+    margin-bottom: 12px;
+  }
+
+  .tmpl-2 .rv-t2-header-right {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .tmpl-2 .rv-t2-name {
+    font-size: 22pt;
+  }
+
+  .tmpl-2 .rv-t2-section {
+    padding: 12px 16px;
+  }
+
+  .tmpl-2 .rv-t2-section-title {
+    font-size: 11pt;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TEMPLATE 3 — PROFESSIONAL PHOTO CV
+   Corporate · ATS-Friendly · White Background
+   Left 30% sidebar  ·  Right 70% main content
+   Suitable for: Freshers · Internships · Campus Placements
+═══════════════════════════════════════════════════════════════ */
+
+/* ─── Root container ─── */
+.resume-preview.tmpl-3 {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1a1d2e;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   HEADER  —  White · Photo left · Name / Role / Summary right
+   Clean corporate top-section, no gradients, no colour fills
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 24px 26px 20px;
+  background: #ffffff;
+  border-bottom: 2px solid #1a1d2e;
+}
+
+/* ─── Profile Photo ─── */
+.tmpl-3 .rv-t3-photo {
+  flex-shrink: 0;
+  width: 128px;
+  height: 128px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1.5px solid #d1d5db;
+}
+.tmpl-3 .rv-t3-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* ─── Name / Role / Summary stack ─── */
+.tmpl-3 .rv-t3-header-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tmpl-3 .rv-t3-name {
+  font-size: 23pt;
+  font-weight: 800;
+  color: #1a1d2e;
+  line-height: 1.1;
+  margin: 0 0 5px 0;
+  letter-spacing: -0.4px;
+  word-break: break-word;
+}
+
+.tmpl-3 .rv-t3-role {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #2563a8;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin: 0 0 12px 0;
+}
+
+.tmpl-3 .rv-t3-summary {
+  font-size: 8.5pt;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+  padding-top: 2px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BODY — Two-column grid: 30% left sidebar · 70% right main
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-body {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  min-height: 0;
+  align-items: start;
+}
+
+/* ─── LEFT SIDEBAR — Subtle off-white background ─── */
+.tmpl-3 .rv-t3-left {
+  background: #f8f9fb;
+  border-right: 1.5px solid #dde0e7;
+  padding: 18px 16px;
+}
+
+/* ─── RIGHT MAIN — Pure white ─── */
+.tmpl-3 .rv-t3-right {
+  background: #ffffff;
+  padding: 18px 22px;
+}
+
+/* ─── Section block ─── */
+.tmpl-3 .rv-t3-section {
+  margin-bottom: 18px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.tmpl-3 .rv-t3-section:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Section Title ─── */
+.tmpl-3 .rv-t3-section-title {
+  font-size: 7pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  color: #2563a8;
+  border-bottom: 1.5px solid #2563a8;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LEFT COLUMN — Contact Items
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 8pt;
+  color: #374151;
+  margin-bottom: 7px;
+  word-break: break-word;
+  line-height: 1.5;
+}
+.tmpl-3 .rv-t3-contact-item:last-child {
+  margin-bottom: 0;
+}
+.tmpl-3 .rv-t3-ci-icon {
+  flex-shrink: 0;
+  font-size: 9pt;
+  line-height: 1.35;
+  opacity: 0.85;
+}
+.tmpl-3 .rv-t3-contact-item a {
+  color: #2563a8;
+  text-decoration: none;
+  word-break: break-all;
+  font-weight: 500;
+}
+.tmpl-3 .rv-t3-contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   LEFT COLUMN — Bullet lists (Tech Skills / Soft Skills / Languages)
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-bullet-item {
+  font-size: 8.5pt;
+  color: #1a1d2e;
+  line-height: 1.55;
+  margin-bottom: 3px;
+  padding-left: 2px;
+}
+.tmpl-3 .rv-t3-bullet-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RIGHT COLUMN — Projects
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-proj-item {
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e9eaed;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.tmpl-3 .rv-t3-proj-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.tmpl-3 .rv-t3-proj-name {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #1a1d2e;
+  margin-bottom: 3px;
+}
+.tmpl-3 .rv-t3-proj-tech {
+  font-size: 8pt;
+  color: #2563a8;
+  font-weight: 600;
+  margin-bottom: 5px;
+  letter-spacing: 0.1px;
+}
+.tmpl-3 .rv-t3-proj-desc {
+  font-size: 8.5pt;
+  color: #4b5563;
+  line-height: 1.65;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RIGHT COLUMN — Education
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-edu-item {
+  margin-bottom: 11px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #e9eaed;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.tmpl-3 .rv-edu-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.tmpl-3 .rv-edu-school {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #1a1d2e;
+  margin-bottom: 2px;
+}
+.tmpl-3 .rv-edu-degree {
+  font-size: 8.5pt;
+  color: #4b5563;
+  margin-bottom: 2px;
+}
+.tmpl-3 .rv-edu-meta {
+  font-size: 8pt;
+  color: #2563a8;
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RIGHT COLUMN — Certifications
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-t3-cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 9px;
+  gap: 10px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.tmpl-3 .rv-t3-cert-item:last-child {
+  margin-bottom: 0;
+}
+.tmpl-3 .rv-cert-name {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #1a1d2e;
+  margin: 0;
+}
+.tmpl-3 .rv-cert-org {
+  font-size: 8pt;
+  color: #6b7280;
+  margin: 2px 0 0;
+}
+.tmpl-3 .rv-cert-year {
+  font-size: 8pt;
+  color: #4b5563;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: right;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RIGHT COLUMN — Experience
+═══════════════════════════════════════════════════════════ */
+.tmpl-3 .rv-exp-item {
+  margin-bottom: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e9eaed;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.tmpl-3 .rv-exp-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.tmpl-3 .rv-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+.tmpl-3 .rv-exp-role {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #1a1d2e;
+}
+.tmpl-3 .rv-exp-company {
+  font-size: 8.5pt;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+.tmpl-3 .rv-exp-duration {
+  font-size: 8pt;
+  color: #2563a8;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+.tmpl-3 .rv-exp-desc {
+  font-size: 8.5pt;
+  color: #4b5563;
+  line-height: 1.65;
+}
+
+/* ─── Empty state ─── */
+.tmpl-3 .rv-empty {
+  font-size: 9pt;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* ─── Responsive: single column on narrow screens ─── */
+@media (max-width: 640px) {
+  .tmpl-3 .rv-t3-body {
+    grid-template-columns: 1fr;
+  }
+  .tmpl-3 .rv-t3-left {
+    border-right: none;
+    border-bottom: 1.5px solid #dde0e7;
+  }
+  .tmpl-3 .rv-t3-header {
+    flex-direction: column;
+  }
+  .tmpl-3 .rv-t3-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PRINT — PDF Export Optimization
+   A4 page fill · Prevent shrinking · Colour preservation
+═══════════════════════════════════════════════════════════════ */
+
+/* ─── A4 page: 8 mm margins, no browser-added whitespace ─── */
+@page {
+  size: A4;
+  margin: 8mm;
+}
+
+@media print {
+  /* Preserve header colors/backgrounds across all templates */
+  .tmpl-1 .rv-header,
+  .tmpl-2 .rv-t2-header,
+  .tmpl-3 .rv-t3-header,
+  .tmpl-3 .rv-t3-left,
+  .tmpl-3 .rv-t3-right {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* ═══ TEMPLATE 2 PDF OPTIMIZATION ═══ */
+  .resume-preview.tmpl-2 {
+    font-size: 9.5pt !important;
+    line-height: 1.4 !important;
+  }
+
+  .tmpl-2 .rv-t2-header {
+    padding: 16px 22px 12px !important;
+    border-bottom: 1.5px solid #1A1D2E !important;
+    margin-bottom: 4px !important;
+    page-break-after: avoid !important;
+  }
+
+  .tmpl-2 .rv-t2-name {
+    font-size: 20pt !important;
+    margin: 0 !important;
+  }
+
+  .tmpl-2 .rv-t2-title {
+    font-size: 9pt !important;
+    margin: 2px 0 0 0 !important;
+  }
+
+  .tmpl-2 .rv-t2-header-right {
+    margin-left: 16px !important;
+  }
+
+  .tmpl-2 .rv-t2-contact-item {
+    font-size: 8pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Professional Summary — compact */
+  .tmpl-2 .rv-t2-summary-section {
+    padding: 8px 22px !important;
+    border-bottom: 1px solid #D1D5FF !important;
+    margin-bottom: 4px !important;
+  }
+
+  .tmpl-2 .rv-t2-objective {
+    font-size: 9pt !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+  }
+
+  /* Compact sections */
+  .tmpl-2 .rv-t2-section {
+    padding: 9px 22px !important;
+    border-bottom: 1px solid #D1D5FF !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .tmpl-2 .rv-t2-section:last-child {
+    border-bottom: none !important;
+  }
+
+  .tmpl-2 .rv-t2-section-title {
+    font-size: 9.5pt !important;
+    margin: 0 0 5px 0 !important;
+    letter-spacing: 1.3px !important;
+  }
+
+  /* Skills, Soft Skills, Languages — compact pills */
+  .tmpl-2 .rv-t2-skills-container,
+  .tmpl-2 .rv-t2-soft-skills-container,
+  .tmpl-2 .rv-t2-languages-container {
+    gap: 5px !important;
+  }
+
+  .tmpl-2 .rv-skill-tag,
+  .tmpl-2 .rv-soft-skill-tag,
+  .tmpl-2 .rv-language-tag {
+    font-size: 7.5pt !important;
+    padding: 3px 11px !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Projects — compact layout */
+  .tmpl-2 .rv-t2-projects-list {
+    gap: 5px !important;
+  }
+
+  .tmpl-2 .rv-proj-item {
+    padding: 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .tmpl-2 .rv-proj-name {
+    font-size: 8.5pt !important;
+    font-weight: 700 !important;
+    margin: 0 0 1px 0 !important;
+  }
+
+  .tmpl-2 .rv-proj-tech {
+    font-size: 7.5pt !important;
+    font-weight: 600 !important;
+    margin: 0 0 2px 0 !important;
+  }
+
+  .tmpl-2 .rv-proj-desc {
+    font-size: 8pt !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+  }
+
+  /* Education — compact */
+  .tmpl-2 .rv-t2-education-list {
+    gap: 2px !important;
+  }
+
+  .tmpl-2 .rv-edu-item {
+    padding: 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .tmpl-2 .rv-edu-school {
+    font-size: 8.5pt !important;
+    font-weight: 700 !important;
+    margin: 0 0 1px 0 !important;
+  }
+
+  .tmpl-2 .rv-edu-degree {
+    font-size: 8pt !important;
+    margin: 0 0 0px 0 !important;
+  }
+
+  .tmpl-2 .rv-edu-meta {
+    font-size: 7.5pt !important;
+    margin: 1px 0 0 0 !important;
+  }
+
+  /* Certifications — compact */
+  .tmpl-2 .rv-t2-certifications-list {
+    gap: 2px !important;
+  }
+
+  .tmpl-2 .rv-cert-item {
+    padding: 0 !important;
+    margin: 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .tmpl-2 .rv-cert-name {
+    font-size: 8.5pt !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+  }
+
+  .tmpl-2 .rv-cert-org {
+    font-size: 7.5pt !important;
+    margin: 0 !important;
+  }
+
+  .tmpl-2 .rv-cert-year {
+    font-size: 7.5pt !important;
+    margin: 0 !important;
+  }
+
+  /* Remove page breaks inside all content blocks */
+  .rv-section,
+  .rv-proj-item,
+  .rv-cert-item,
+  .rv-edu-item,
+  .rv-skill-tag,
+  .rv-soft-skill-tag,
+  .rv-language-tag {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* ── Ensure page is fully used, no bottom margin collapse ── */
+  .resume-preview {
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     TEMPLATE 3 — A4 PDF OPTIMIZATION
+     Goal: fill page naturally, no browser auto-shrink
+  ═══════════════════════════════════════════════════════════ */
+
+  /* Prevent browser zoom/scale shrinking */
+  .resume-preview.tmpl-3 {
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    zoom: 1 !important;
+    font-size: 9pt !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ── Header: keep full photo, generous padding ── */
+  .tmpl-3 .rv-t3-header {
+    gap: 18px !important;
+    padding: 18px 20px 16px !important;
+    border-bottom: 2px solid #1a1d2e !important;
+    page-break-after: avoid !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Photo: full size, colour preserved */
+  .tmpl-3 .rv-t3-photo {
+    width: 110px !important;
+    height: 110px !important;
+    border-radius: 6px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .tmpl-3 .rv-t3-name {
+    font-size: 20pt !important;
+    margin: 0 0 4px 0 !important;
+  }
+
+  .tmpl-3 .rv-t3-role {
+    font-size: 9pt !important;
+    margin: 0 0 10px 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .tmpl-3 .rv-t3-summary {
+    font-size: 8.5pt !important;
+    line-height: 1.6 !important;
+    padding-top: 9px !important;
+  }
+
+  /* ── Body: two-column, locked proportions ── */
+  .tmpl-3 .rv-t3-body {
+    display: grid !important;
+    grid-template-columns: 30% 70% !important;
+    width: 100% !important;
+  }
+
+  /* Left sidebar: colour must print */
+  .tmpl-3 .rv-t3-left {
+    background: #f8f9fb !important;
+    border-right: 1.5px solid #dde0e7 !important;
+    padding: 16px 14px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Right main */
+  .tmpl-3 .rv-t3-right {
+    padding: 16px 20px !important;
+  }
+
+  /* ── Sections: generous spacing to fill page ── */
+  .tmpl-3 .rv-t3-section {
+    margin-bottom: 16px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .tmpl-3 .rv-t3-section:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Section titles: full colour, readable size */
+  .tmpl-3 .rv-t3-section-title {
+    font-size: 7pt !important;
+    font-weight: 800 !important;
+    letter-spacing: 2px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 9px !important;
+    color: #2563a8 !important;
+    border-bottom: 1.5px solid #2563a8 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ── Contact items ── */
+  .tmpl-3 .rv-t3-contact-item {
+    font-size: 8pt !important;
+    margin-bottom: 7px !important;
+    gap: 6px !important;
+    line-height: 1.5 !important;
+  }
+  .tmpl-3 .rv-t3-contact-item a {
+    color: #2563a8 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ── Bullet items (Skills / Soft Skills / Languages) ── */
+  .tmpl-3 .rv-t3-bullet-item {
+    font-size: 8.5pt !important;
+    line-height: 1.55 !important;
+    margin-bottom: 4px !important;
+  }
+
+  /* ── Projects ── */
+  .tmpl-3 .rv-t3-proj-item {
+    margin-bottom: 12px !important;
+    padding-bottom: 12px !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .tmpl-3 .rv-t3-proj-item:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .tmpl-3 .rv-t3-proj-name {
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
+    margin-bottom: 3px !important;
+  }
+  .tmpl-3 .rv-t3-proj-tech {
+    font-size: 8pt !important;
+    margin-bottom: 4px !important;
+    color: #2563a8 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .tmpl-3 .rv-t3-proj-desc {
+    font-size: 8.5pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ── Education ── */
+  .tmpl-3 .rv-edu-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .tmpl-3 .rv-edu-item:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .tmpl-3 .rv-edu-school {
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
+    margin-bottom: 2px !important;
+  }
+  .tmpl-3 .rv-edu-degree {
+    font-size: 8.5pt !important;
+    margin-bottom: 2px !important;
+  }
+  .tmpl-3 .rv-edu-meta {
+    font-size: 8pt !important;
+    color: #2563a8 !important;
+    font-weight: 600 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ── Experience ── */
+  .tmpl-3 .rv-exp-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .tmpl-3 .rv-exp-item:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .tmpl-3 .rv-exp-role {
+    font-size: 9.5pt !important;
+    font-weight: 700 !important;
+  }
+  .tmpl-3 .rv-exp-company {
+    font-size: 8.5pt !important;
+    margin-bottom: 4px !important;
+  }
+  .tmpl-3 .rv-exp-duration {
+    font-size: 8pt !important;
+    color: #2563a8 !important;
+    font-weight: 600 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .tmpl-3 .rv-exp-desc {
+    font-size: 8.5pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ── Certifications ── */
+  .tmpl-3 .rv-t3-cert-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 9px !important;
+  }
+  .tmpl-3 .rv-t3-cert-item:last-child {
+    margin-bottom: 0 !important;
+  }
+  .tmpl-3 .rv-cert-name {
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+  }
+  .tmpl-3 .rv-cert-org {
+    font-size: 8pt !important;
+  }
+  .tmpl-3 .rv-cert-year {
+    font-size: 8pt !important;
+    font-weight: 600 !important;
+  }
+}
